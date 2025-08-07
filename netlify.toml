@@ -1,0 +1,15 @@
+# c:/Users/2094110/OneDrive - Cognizant/Documents/Vibe coding/data-migration-page/netlify.toml
+
+[build]
+  # This is the command Netlify will run to build your site.
+  command = "ng build"
+  
+  # This is the directory that contains the built site.
+  # IMPORTANT: Change 'data-migration-page' to your project's name.
+  publish = "dist/data-migration-page"
+
+# This rule is essential for single-page applications like Angular.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
