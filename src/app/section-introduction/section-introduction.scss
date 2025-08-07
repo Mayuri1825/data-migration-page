@@ -1,0 +1,81 @@
+.introduction-section {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd3cVK-9EtU_09_1Y6OjxGk5x2XdmizBaZDA&s') no-repeat center center/cover;
+    position: relative;
+    color: white;
+    padding: 50px;
+    text-align: center; /* Center align text for a cleaner look */
+    padding-top: 80px; /* Increase top padding for more breathing room */
+    padding-bottom: 80px; /* Add bottom padding */
+  
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6); /* Slightly darker overlay for better text contrast */
+      z-index: 1;
+    }
+  
+    .content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px; /* Slightly wider content area */
+      margin: 0 auto; /* Center content horizontally */
+      padding: 30px; /* Increase content padding */
+      background: rgba(255, 255, 255, 0.1); /* Subtle translucent background for content */
+      border-radius: 10px; /* Rounded corners for the content box */
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+    }
+  
+    .section-title {
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 15px;
+      text-align: center; /* Keep title centered */
+      font-size: 2.8em; /* Larger title font size */
+      margin-bottom: 25px; /* More space below the title */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+    }
+  
+    p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      margin-bottom: 15px;
+      font-size: 1.15em; /* Slightly adjusted paragraph font size */
+      line-height: 1.7; /* Slightly adjusted line height */
+      margin-bottom: 20px; /* More space below paragraphs */
+      max-width: 700px; /* Limit paragraph width for readability */
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    ul {
+      margin: 15px 0;
+      padding-left: 20px;
+      list-style: none; /* Remove default bullet points */
+      padding: 0; /* Remove default padding */
+      text-align: left; /* Align list items to the left within the centered content */
+      max-width: 600px; /* Limit list width */
+      margin: 20px auto; /* Center the list */
+  
+      li {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        font-size: 1.1em; /* Slightly smaller list item font size */
+        margin-bottom: 12px; /* More space between list items */
+        position: relative;
+        padding-left: 30px; /* Space for custom bullet */
+
+        &::before {
+          content: '✓'; /* Custom checkmark bullet */
+          color: #4CAF50; /* Green color for the checkmark */
+          font-weight: bold;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+  }

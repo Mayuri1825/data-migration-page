@@ -1,0 +1,54 @@
+<div id="section3" class="solutions-section">
+  <h1 class="section-title">Data Migration: Approaches &amp; Phases</h1>
+
+  <div class="approaches-container">
+    <h2 class="sub-title">Approaches to Data Migration</h2>
+    <p class="intro-paragraph">We can approach a data migration project in one of two ways:</p>
+    <div class="comparison-grid">
+      <!-- Big Bang Column -->
+      <div class="approach-card">
+        <h3 class="approach-title">Big Bang Migration</h3>
+        <p>In a big bang scenario, you move all data assets from source to target in one go and within a relatively short time window. While the migration is one, the systems are down and unavailable for users. The migration is typically executed during a holiday or weekend.</p>
+        <ul class="pros-cons">
+          <li class="pro">Less costly and less complex.</li>
+          <li class="pro">Takes less time; all activities happen at once.</li>
+          <li class="con">High risk of expensive failure.</li>
+          <li class="con">Requires system downtime.</li>
+        </ul>
+        <p><strong>Best suited for:</strong> Symmetric data migrations where downtime is acceptable.</p>
+      </div>
+
+      <!-- Agile Column -->
+      <div class="approach-card">
+        <h3 class="approach-title">Agile (Phased) Migration</h3>
+        <p>In this scenario, we break the entire process into sub-migrations, each with its own goals, timelines, and scope. This approach involves parallel running old and new systems and transferring data incrementally, ensuring zero application downtime.</p>
+        <ul class="pros-cons">
+          <li class="pro">Less prone to unexpected failures.</li>
+          <li class="pro">Zero application downtime.</li>
+          <li class="con">Takes longer and adds complexity.</li>
+          <li class="con">More expensive due to maintaining two systems.</li>
+        </ul>
+        <p><strong>Best suited for:</strong> Larger, highly critical applications with independent modules.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="phases-container">
+    <h2 class="sub-title">Data Migration Project Phases</h2>
+    <p class="intro-paragraph">A data migration project goes through the same phases as any other IT Project. The complexity and duration of these phases will vary based on the classification, business case, and approach taken for the project.</p>
+    <ol class="phases-list">
+      <li class="phase-item">
+        <h4>Project Scoping &amp; Estimation</h4>
+        <p>Every data migration activity requires a clear understanding of the project scope, required capabilities, and impacted stakeholders. Scoping helps in defining complexity, required skill sets, and project cost estimation.</p>
+        <p><strong>Business Considerations:</strong></p>
+        <ul>
+          <li>Impact on the BAU (Business As Usual) process.</li>
+          <li>Workaround solutions to mitigate identified impact.</li>
+          <li>Pre-migration activities on the source systems.</li>
+          <li>Post-migration testing and consuming application impact.</li>
+          <li>Defining during &amp; post-migration support processes.</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+</div>

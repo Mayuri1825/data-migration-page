@@ -1,0 +1,116 @@
+.solutions-section {
+    // A professional and clean purple/lavender gradient
+    background: linear-gradient(135deg, #f2f1f8 0%, #e6e2f3 100%);
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    color: #4a4a68; // A dark, soft purple for text
+  
+    .section-title {
+      color: #4527a0; // Deep purple for the main title
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+  
+    .sub-title {
+      color: #5e35b1; // A slightly lighter purple for subtitles
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #d1c4e9;
+    }
+  
+    .intro-paragraph {
+      font-size: 1.1rem;
+      color: #5a5a78;
+      margin-bottom: 2rem;
+    }
+  
+    // --- Approaches Comparison ---
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+  
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
+    }
+  
+    .approach-card {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+      border-left: 5px solid;
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  
+      &:first-child {
+        border-color: #7e57c2; // A nice medium purple
+      }
+      &:last-child {
+        border-color: #5c6bc0; // A nice indigo
+      }
+  
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      }
+  
+      .approach-title {
+        margin-top: 0;
+        color: #311b92; // Darkest purple
+      }
+  
+      .pros-cons {
+        list-style: none;
+        padding: 0;
+        margin: 1.5rem 0;
+  
+        li {
+          padding-left: 1.5rem;
+          position: relative;
+          margin-bottom: 0.5rem;
+  
+          &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 1rem;
+            height: 1rem;
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+        }
+  
+        .pro::before {
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%234caf50'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/%3E%3C/svg%3E");
+        }
+  
+        .con::before {
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23f44336'%3E%3Cpath d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/%3E%3C/svg%3E");
+        }
+      }
+    }
+  
+    // --- Project Phases ---
+    .phases-list {
+      list-style: none;
+      padding: 0;
+      counter-reset: phase;
+      margin-top: 2rem;
+  
+      .phase-item {
+        background: rgba(255, 255, 255, 0.7);
+        padding: 1.5rem 2rem;
+        margin-bottom: 1.5rem;
+        border-radius: 8px;
+        border-left: 4px solid #7e57c2;
+  
+        h4 { margin-top: 0; color: #4527a0; }
+        ul { padding-left: 20px; li { margin-bottom: 0.5rem; } }
+      }
+    }
+  }
+  

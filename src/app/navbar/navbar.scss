@@ -1,0 +1,77 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+
+  // Initial state (transparent)
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  // Glassmorphism effect on scroll
+  &.scrolled {
+    background: linear-gradient(135deg, #1c2331 0%, #2a396f 100%);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    padding: 0.75rem 2rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    padding: 0.75rem 2rem; // Slightly smaller padding on scroll
+  }
+
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .navbar-brand a {
+    color: #ffffff;
+    font-size: 1.6rem; // Slightly larger
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    transition: color 0.3s ease;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      // A subtle gradient text effect on hover
+      background: linear-gradient(90deg, #a7c5eb, #c3eaff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      // text-fill-color: transparent;
+    }
+  }
+
+  .navbar-links {
+    display: flex;
+    gap: 1.5rem; // Increased gap
+    padding-right: 20px;
+  }
+
+  .navbar-item {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    border-radius: 6px; // Rounded corners for the highlight
+
+    // Remove the old underline effect
+    &::after {
+      content: none;
+    }
+
+    &:hover,
+    &.active {
+      color: #ffffff;
+      transform: translateY(-3px);
+      background-color: rgba(255, 255, 255, 0.1); // Subtle background highlight
+    }
+  }
+}
